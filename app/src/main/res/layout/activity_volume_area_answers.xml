@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:backgroundTint="@color/bg"
+    tools:context=".View.VolumeAreaAnswers">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="57dp"
+        android:layout_height="16dp"
+        android:text="Area:"
+        android:textAlignment="center"
+        android:textColor="@color/font"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/areaAns"
+        app:layout_constraintStart_toStartOf="@+id/areaAns"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/inp3"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:hint="Enter number"
+        android:textColorHint="@color/lightGreen"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="@color/font"
+        app:layout_constraintBottom_toBottomOf="@+id/variable3"
+        app:layout_constraintEnd_toEndOf="@+id/inp2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inp2"
+        app:layout_constraintTop_toTopOf="@+id/variable3"
+        app:layout_constraintVertical_bias="0.277" />
+
+    <EditText
+        android:id="@+id/inp2"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Enter number"
+        android:textColorHint="@color/lightGreen"
+        android:inputType="numberDecimal"
+        android:textColor="@color/font"
+        app:layout_constraintBottom_toBottomOf="@+id/variable2"
+        app:layout_constraintEnd_toEndOf="@+id/inp1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inp1"
+        app:layout_constraintTop_toTopOf="@+id/variable2"
+        app:layout_constraintVertical_bias="0.388" />
+
+    <TextView
+        android:id="@+id/shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Pyramid"
+        android:textAlignment="center"
+        android:textColor="@color/font"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume and Area"
+        android:textColor="@color/font"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/shape"
+        app:layout_constraintStart_toStartOf="@+id/shape"
+        app:layout_constraintTop_toBottomOf="@+id/shape" />
+
+    <TextView
+        android:id="@+id/variable1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Length: "
+        android:textColor="@color/font"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/variable2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Width: "
+        android:textColor="@color/font"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/variable1"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintStart_toStartOf="@+id/variable1"
+        app:layout_constraintTop_toBottomOf="@+id/variable1" />
+
+    <TextView
+        android:id="@+id/variable3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Height: "
+        android:textColor="@color/font"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/variable2"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/variable2"
+        app:layout_constraintTop_toBottomOf="@+id/variable2" />
+
+    <TextView
+        android:id="@+id/volumeAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="Volume Answer"
+        android:textColor="@color/font"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/variable3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/variable3"
+        app:layout_constraintTop_toBottomOf="@+id/variable3" />
+
+    <TextView
+        android:id="@+id/areaAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Area Answer"
+        android:textColor="@color/font"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/volumeAns"
+        app:layout_constraintEnd_toEndOf="@+id/inp3"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="@+id/inp3"
+        app:layout_constraintTop_toTopOf="@+id/volumeAns"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/calculate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="388dp"
+        android:backgroundTint="@color/green"
+        android:text="Calculate"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <EditText
+        android:id="@+id/inp1"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Enter number"
+        android:textColorHint="@color/lightGreen"
+        android:inputType="numberDecimal"
+        android:textColor="@color/font"
+        app:layout_constraintBottom_toBottomOf="@+id/variable1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/variable1"
+        app:layout_constraintTop_toTopOf="@+id/variable1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="57dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Volume:"
+        android:visibility="invisible"
+        android:textColor="@color/font"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/volumeAns"
+        app:layout_constraintEnd_toEndOf="@+id/volumeAns"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/volumeAns"
+        app:layout_constraintTop_toBottomOf="@+id/variable3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
